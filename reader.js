@@ -29,7 +29,8 @@ let button = document.getElementById("get-text-btn");
                         throw new Error("Error while reading file.");
                     }
                     let text = await response.text();
-                    textArea.innerHTML = text;
+                    let studentList = text.split("",4);
+                    textArea.innerHTML = studentList;
                 } catch (err) {
                     textArea.innerHTML = 'Fetch problem: ' + err.message;
                 } finally {
