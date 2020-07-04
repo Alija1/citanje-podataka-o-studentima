@@ -31,6 +31,7 @@ let button = document.getElementById("get-text-btn");
                     let text = await response.text();
                     let studentList = text.split("",4);
                     textArea.innerHTML = studentList;
+                    console.log(studentList);
                 } catch (err) {
                     textArea.innerHTML = 'Fetch problem: ' + err.message;
                 } finally {
