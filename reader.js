@@ -29,7 +29,7 @@ let button = document.getElementById("get-text-btn");
                         throw new Error("Error while reading file.");
                     }
                     let text = await response.text();
-                    let studentList = text.split("",4);
+                    let studentList = text.split("\n",4);
                     textArea.innerHTML = studentList;
                     console.log(studentList);
                 } catch (err) {
