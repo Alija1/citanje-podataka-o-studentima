@@ -7,7 +7,7 @@ class Student {
         this.course = course;
     }
 
-    getInfo() {
+    getInfo(studentList) {
         return "Name: " + this.name + "\n" +
         "Address: " + this.address + "\n" +
         "Phone: " + this.phone + "\n" +
