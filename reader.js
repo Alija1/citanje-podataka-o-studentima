@@ -14,7 +14,7 @@ let button = document.getElementById("get-text-btn");
                     var text = await response.text();
                     var studentList = text.split("\n");
                     var newStudents = [];
-                    while (studentList.length > 0) {
+                    while (let i = 0; i < studentList.length; i++) {
                         class Student {
 
                         constructor(name, address, phone, course){
