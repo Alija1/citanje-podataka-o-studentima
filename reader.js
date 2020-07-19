@@ -23,6 +23,12 @@ let button = document.getElementById("get-text-btn");
                             this.phone = phone;
                             this.course = course;
                         }
+                        getInfo() {
+                            return "Name: " + this.name + "\n" +
+                            "Address: " + this.address + "\n" +
+                            "Phone: " + this.phone + "\n" +
+                            "Course: " + this.course "\n"
+                        }
                         }
                         var newStudent = new Student(studentList[0], studentList[1], studentList[2], studentList[3]);
                         newStudents.push(Student.getInfo() + '\n');
