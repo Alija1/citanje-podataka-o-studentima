@@ -27,7 +27,7 @@ let button = document.getElementById("get-text-btn");
                             return "Name: " + this.name + "\n" +
                             "Address: " + this.address + "\n" +
                             "Phone: " + this.phone + "\n" +
-                            "Course: " + this.course "\n"
+                            "Course: " + this.course
                         }
                         }
                         var newStudent = new Student(studentList[0], studentList[1], studentList[2], studentList[3]);
