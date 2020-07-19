@@ -25,7 +25,7 @@ let button = document.getElementById("get-text-btn");
                         }
                         }
                         var newStudent = new Student(studentList[0], studentList[1], studentList[2], studentList[3]);
-                        newStudents.push(newStudent.getInfo() + '\n');
+                        newStudents.push(Student.getInfo() + '\n');
                         studentList.splice(0, 4);
                         textArea.innerHTML = document.write(newStudent);
                     }
