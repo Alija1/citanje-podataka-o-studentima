@@ -30,7 +30,7 @@ let button = document.getElementById("get-text-btn");
                     }
                     let text = await response.text();
                     let studentList = text.split("\n");
-                    let student = studentlist.splice(0,4);
+                    let student = studentList.splice(0,4);
                     textArea.innerHTML = student;
                 } catch (err) {
                     textArea.innerHTML = 'Fetch problem: ' + err.message;
