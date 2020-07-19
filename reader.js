@@ -11,8 +11,8 @@ let button = document.getElementById("get-text-btn");
                     if (response.status !== 200) {
                         throw new Error("Error while reading file.");
                     }
-                    let text = await response.text();
-                    let studentList = text.split("\n");
+                    var text = await response.text();
+                    var studentList = text.split("\n");
                     var newStudents = [];
                     while (studentList.length > 0) {
                         class Student {
