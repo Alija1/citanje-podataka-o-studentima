@@ -34,7 +34,7 @@ let button = document.getElementById("get-text-btn");
                     while (text.length > 0) {
                         var newStudent = new Student(text[0], text[1], text[2], text[3]);
                         newStudents.push(newStudent.getInfo() + '\n');
-                        text.splice(0, 4);
+                        studentList.splice(0, 4);
                         textArea.innerHTML = newStudent;
                     }
                 } catch (err) {
