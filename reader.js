@@ -1,20 +1,3 @@
-class Student {
-
-    constructor(name, address, phone, course){
-        this.name = name;
-        this.address = address;
-        this.phone = phone;
-        this.course = course;
-    }
-
-    getInfo() {
-        return "Name: " + this.name + "\n" +
-        "Address: " + this.address + "\n" +
-        "Phone: " + this.phone + "\n" +
-        "Course: " + this.course
-    }
-}
-
 let button = document.getElementById("get-text-btn");
             let textArea = document.getElementById("my-text-area");
             let loader = document.getElementById("loader");
