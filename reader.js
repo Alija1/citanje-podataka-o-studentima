@@ -14,7 +14,7 @@ let button = document.getElementById("get-text-btn");
                     var text = await response.text();
                     var studentList = text.split("\n");
                     var newStudents = [];
-                    while (let i = 0; i < studentList.length; i++) {
+                    while (studentList.length > 0) {
                         class Student {
 
                         constructor(name, address, phone, course){
@@ -31,8 +31,8 @@ let button = document.getElementById("get-text-btn");
                         }
                         }
                         var newStudent = new Student(studentList[0], studentList[1], studentList[2], studentList[3]);
-                        newStudents.push(newStudent.getInfo() + '\n');
-                        studentList.splice(0, 4);
+                        newStudents.push(newStudent.getInfo() + "\n");
+                        studentList.splice(0, 3);
                         textArea.innerHTML = document.write(newStudent);
                     }
                 } catch (err) {
